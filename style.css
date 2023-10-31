@@ -1,0 +1,189 @@
+body {
+    background-color: #999999;
+    background-size: auto;
+    background-repeat: repeat;
+}
+
+.hide {
+    display: none !important;
+}
+
+.profile-image {
+    width: 280px;
+    align-content: flex-end;
+    display: block;
+    position: absolute;
+    right: 50%;
+    border-radius: 20%;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info__fullname {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 99999999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: solid;
+}
+
+.info__nickname_tg {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 5000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.info__nickname_github {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 5000;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.info__title {
+    align-items: center;
+    font-size: 50px;
+    font-weight: 5000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.info_logo_tg {
+    width: 25px;
+}
+
+.info_logo_git {
+    width: 20px;
+}
+
+.header__logo {
+    width: 100px;
+    margin: 0;
+    font-size: 100px;
+    font-weight: 5000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: #2980B9;
+}
+
+.header__menu {
+    position: relative;
+}
+
+.header__menu .menu__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__menu .menu__btn svg {
+    width: 25px;
+    height: 25px;
+}
+
+
+.header__menu .menu__list {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    list-style-type: none;
+    border-radius: 4px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: menu-showing .3s;
+}
+
+.header__menu .menu__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+@keyframes menu-showing {
+    from {
+        transform: translateY(95%);
+    }
+}
+
+/* Кнопка выпадающего списка */
+.port_button {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего меню при наведении и фокусировке */
+.port_button:hover, .port_button:focus {
+    background-color: #2980B9;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.portfolio_button {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.portfolio-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.portfolio-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.portfolio-content a:hover {
+    background-color: #ddd
+}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {
+    display: block;
+}
+a {
+    color: darkslategray;
+}
+
+.portfolio {
+    font-family: Cantarell, ui-serif;
+    font-size: large;
+}
